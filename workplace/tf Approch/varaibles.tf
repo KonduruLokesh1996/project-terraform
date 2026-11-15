@@ -6,15 +6,13 @@
 
 
 variable "instance_type" {
-    type        = map
-    default     = {
-        dev = "t3.small"
-        prod = "t3.medium"
-        uat = "t3.large"
-    }
+    type        = string
   
 }
 
+variable "environment" {
+    type        = string
+}
 
 variable "ec2_tags" {
     type        = map
